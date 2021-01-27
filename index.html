@@ -8,16 +8,26 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
         html{
-            background: rgb(0,140,255);
-            background: linear-gradient(0deg, rgba(0,140,255,1) 0%, rgba(174,195,255,1) 100%);
+            background-image: url('coffee_workdesk.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
         }
 
         .name{
-            text-align: center;
-            color: #ffffff;
+            margin-left: 750px;
+            color: #000;
             font-family: 'Montserrat', sans-serif;
             margin-top: 10%;
             font-size: 60px;
+            animation: slideMe .7s ease-in;
         }
 
         @keyframes changing-description {
@@ -32,18 +42,28 @@
 		.animated:after{
 			animation: changing-description 10s infinite;
 			content: "DEVELOPER";
-			text-align: center;
+			margin-left: 750px;
             font-family: 'Montserrat', sans-serif;
 			color: #ffffff;
 			font-size: 40px;
+            animation: slideChanging .7s ease-in;
 		}
+
+        @keyframes slideChanging{
+            0%{
+                transform: skewX(53deg) translateX(-500px);
+            }
+            100%{
+                transform: skew(0deg);
+            }
+        }
 
 		 .changing-words{
 			text-align: center;
 			margin-top: 5%;
 		} 
 
-            .arrow{
+        .arrow{
         position: absolute;
         top: 80%;
         left: 50%;
@@ -53,8 +73,8 @@
             display: block;
             width: 30px;
             height: 30px;
-            border-bottom: 5px solid #ffffff;
-            border-right: 5px solid #ffffff;
+            border-bottom: 5px solid #000;
+            border-right: 5px solid #000;
             transform: rotate(45deg);
             margin: -10px;
             animation: animate 2s infinite;
@@ -80,12 +100,12 @@
         }
 
         .about_me{
-            margin-top: 50%;
+            margin-top: 45%;
         }
         
         .description{
             text-align: center;
-            color: #ffffff;
+            color: #000;
             font-size: 40px;
             font-family: 'Roboto', sans-serif;
         }
@@ -113,33 +133,47 @@
             text-align: center;
             font-family: 'Montserrat', sans-serif;
             font-size: 50px;
-            color: #ffffff;
+            color: #000;
             text-decoration: underline;
             margin-top: 25%;
         }
 
         .aboutme_title{
             text-align: center;
-            color: #ffffff;
+            color: #000;
             font-size: 50px;
             font-family: 'Montserrat', sans-serif;
             text-decoration: underline;
         }
 
         .info{
-            background-color: #323232;
+            background-color: #ffffff;
             padding: 0;
+        }
+
+        @keyframes slideMe{
+            0%{
+                transform: skewX(53deg) translateX(-500px);
+            }
+            100%{
+                transform: skew(0deg);
+            }
         }
 
     </style>
 </head>
 <body>
     
+    <div class="sliding-words">
     <h1 class="name">Mark Antao</h1>
+    </div>
 
+    <div class="sliding">
     <div class="changing-words">
         <h3 class="animated"></h3>
         </div>
+    </div>
+
 
         <div class="arrow">
             <span></span>
@@ -155,15 +189,15 @@
                 <p>Hi! My name is Mark Antao! I am a student, developer, and a lifetime learner. I love to code and learn new things. I have skills in front-end development, design, and intermediate understanding of backend. I love learning new things each and every day! I have written articles for medium.com and I have coded several projects. My ultimite goal is to build a project that will change the world. Scroll down for more informatoin.</p>
             </div>
         </section>
-
+<!-- 
         <section class="my_skills">
             <h1 class="skills_title">Skills</h1>
             <div class="skills">
-                <div class="skill1"><img src="/Users/markantao/Desktop/Visual-Studio-Projects/website_markantao/markantao.github.io/html_logo.png" height="400px"></div>
+                <div class="skill1"><img src="html_logo.png" height="400px"></div>
                 <div class="skill2"></div>
                 <div class="skills3"></div>
             </div>
-        </section>
+        </section> -->
     </section>
 
 
