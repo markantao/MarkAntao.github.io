@@ -53,8 +53,8 @@
             display: block;
             width: 30px;
             height: 30px;
-            border-bottom: 5px solid #06A8FF;
-            border-right: 5px solid #06A8FF;
+            border-bottom: 5px solid #ffffff;
+            border-right: 5px solid #ffffff;
             transform: rotate(45deg);
             margin: -10px;
             animation: animate 2s infinite;
@@ -90,6 +90,47 @@
             font-family: 'Roboto', sans-serif;
         }
 
+        .skills{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 5em;
+            justify-items: stretch;
+            align-items: stretch;
+        }
+
+        .skills > div{
+            /* background: #eee; */
+            padding: 1em;
+        }
+
+        .skills1{
+            grid-column: 1/4;
+            grid-row: 1/3;
+        }
+
+        .skills_title{
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 50px;
+            color: #ffffff;
+            text-decoration: underline;
+            margin-top: 25%;
+        }
+
+        .aboutme_title{
+            text-align: center;
+            color: #ffffff;
+            font-size: 50px;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: underline;
+        }
+
+        .info{
+            background-color: #323232;
+            padding: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -106,12 +147,24 @@
             <span></span>
         </div>
 
+        <section class="info">
         <section class="about_me">
             <hr>
+            <h1 class="aboutme_title">About Me</h1>
             <div class="description">
-                <p>Hi! My name is Mark Antao! I am a student, developer, and a lifetime learner. I love to code and learn new things. I have skills in front-end development, design, and intermediate understanding of backend. I love learning new things each and every day! I have written articles for medium.com and I have coded several projects. My ultimite goal is to beuild a project that will change the world. Scroll down for more informatoin.</p>
+                <p>Hi! My name is Mark Antao! I am a student, developer, and a lifetime learner. I love to code and learn new things. I have skills in front-end development, design, and intermediate understanding of backend. I love learning new things each and every day! I have written articles for medium.com and I have coded several projects. My ultimite goal is to build a project that will change the world. Scroll down for more informatoin.</p>
             </div>
         </section>
+
+        <section class="my_skills">
+            <h1 class="skills_title">Skills</h1>
+            <div class="skills">
+                <div class="skill1"><img src="/Users/markantao/Desktop/Visual-Studio-Projects/website_markantao/markantao.github.io/html_logo.png" height="400px"></div>
+                <div class="skill2"></div>
+                <div class="skills3"></div>
+            </div>
+        </section>
+    </section>
 
 
 </body>
