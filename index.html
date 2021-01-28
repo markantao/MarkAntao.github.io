@@ -22,7 +22,7 @@
         }
 
         .name{
-            margin-left: 750px;
+            margin-left: 850px;
             color: #000;
             font-family: 'Montserrat', sans-serif;
             margin-top: 10%;
@@ -42,21 +42,11 @@
 		.animated:after{
 			animation: changing-description 10s infinite;
 			content: "DEVELOPER";
-			margin-left: 750px;
+            text-align: center;
             font-family: 'Montserrat', sans-serif;
-			color: #ffffff;
+			color: #000;
 			font-size: 40px;
-            animation: slideChanging .7s ease-in;
 		}
-
-        @keyframes slideChanging{
-            0%{
-                transform: skewX(53deg) translateX(-500px);
-            }
-            100%{
-                transform: skew(0deg);
-            }
-        }
 
 		 .changing-words{
 			text-align: center;
@@ -64,11 +54,12 @@
 		} 
 
         .arrow{
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%,-50%);
         }
+
         .arrow span{
             display: block;
             width: 30px;
@@ -147,7 +138,7 @@
         }
 
         .info{
-            background-color: #ffffff;
+            background-color: #323232;
             padding: 0;
         }
 
@@ -168,11 +159,9 @@
     <h1 class="name">Mark Antao</h1>
     </div>
 
-    <div class="sliding">
     <div class="changing-words">
         <h3 class="animated"></h3>
         </div>
-    </div>
 
 
         <div class="arrow">
@@ -183,7 +172,6 @@
 
         <section class="info">
         <section class="about_me">
-            <hr>
             <h1 class="aboutme_title">About Me</h1>
             <div class="description">
                 <p>Hi! My name is Mark Antao! I am a student, developer, and a lifetime learner. I love to code and learn new things. I have skills in front-end development, design, and intermediate understanding of backend. I love learning new things each and every day! I have written articles for medium.com and I have coded several projects. My ultimite goal is to build a project that will change the world. Scroll down for more informatoin.</p>
