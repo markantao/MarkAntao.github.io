@@ -41,7 +41,7 @@
 
       <nav>
         <ul class="nav_links">
-          <li><a href="#">About Me</a></li>
+          <li><a href="#descriptionAboutMe">About Me</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">Projects</a></li>
         </ul>
@@ -60,6 +60,21 @@
         <span></span>
       </div>
     </section>
+
+    <section class="about_me">
+      <h1 class="captionAboutMe" id="descriptionAboutMe">About Me</h1>
+      <br />
+      <p class="descriptionAboutMe">
+        Hi! My name is Mark Antao! I am 14 years old and I live in Toronto
+        Ontario, Canada. I am in grade 8. I like to learn new things and I love
+        new experiences. I love coding and playing sports and trying new things.
+        I have experience in multiple programming languages and I have also
+        written multiple Medium.com articles and I make content for Youtube.
+        Scroll down for more information.
+      </p>
+    </section>
+
+    <hr />
 
     <!-- <section class="aboutme">
       <h1 class="aboutMeCaption">About Me</h1>
@@ -89,6 +104,7 @@
       margin: 0;
       padding: 0;
       background-color: #4f575b;
+      scroll-behavior: smooth;
     }
 
     body {
@@ -130,6 +146,14 @@
       color: #ffffff;
     }
 
+    .captionAboutMe {
+      text-align: center;
+      color: #ffffff;
+      margin-top: 40%;
+      font-family: "Roboto", sans-serif;
+      font-size: 40px;
+    }
+
     .name {
       color: #ffffff;
       font-size: 30px;
@@ -165,6 +189,14 @@
 
     button:hover {
       background-color: rgba(0, 136, 169, 0.8);
+    }
+
+    .descriptionAboutMe {
+      padding: 100px;
+      text-align: center;
+      font-family: "Montserrat", cursive;
+      font-size: 25px;
+      color: #ffffff;
     }
 
     .arrow {
