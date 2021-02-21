@@ -2,12 +2,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
-    />
+    /> -->
   </head>
   <title>Mark Antao</title>
   <body>
@@ -35,7 +35,18 @@
       </div>
     </nav> -->
 
-    <h1 class="name">Mark Antao</h1>
+    <header>
+      <h1 class="name">Mark Antao</h1>
+
+      <nav>
+        <ul class="nav_links">
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#"><button>Contact Me</button></a>
+    </header>
 
     <section class="homePage">
       <img class="img" src="/thinking_image.svg" />
@@ -54,22 +65,49 @@
       <p>Hi! My name is Mark Antao</p>
     </section> -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
-      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      //   src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      //   integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      //   crossorigin="anonymous"
+      //
+    </script>
+    <script>
+      //   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      //   integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      //   crossorigin="anonymous"
+    </script>
   </body>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap");
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      background-color: #4f575b;
+    }
 
     body {
       background-color: #4f575b;
+    }
+
+    li,
+    a,
+    button {
+      font-family: "Montserrat", cursive;
+      font-weight: 500px;
+      font-size: 16px;
+      color: #edf0f1;
+      text-decoration: none;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
     }
 
     #name {
@@ -83,9 +121,40 @@
     }
 
     .name {
-      text-align: center;
       color: #ffffff;
-      font-size: 40px;
+      font-size: 30px;
+      font-family: "Roboto", sans-serif;
+      cursor: pointer;
+    }
+
+    .nav_links {
+      list-style: none;
+    }
+
+    .nav_links li {
+      display: inline-block;
+      padding: 0px 20px;
+    }
+
+    .nav_links li a {
+      transition: all 0.3s ease 0s;
+    }
+
+    .nav_links li a:hover {
+      color: #0088a9;
+    }
+
+    button {
+      padding: 9px 25px;
+      background-color: rgba(0, 136, 169, 1);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    }
+
+    button:hover {
+      background-color: rgba(0, 136, 169, 0.8);
     }
 
     .arrow {
